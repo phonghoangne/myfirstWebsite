@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベトナムの旧正月</title>
+    <link rel="stylesheet" href="/purezen1/assets/style.css">
+    <link rel="stylesheet" href="/purezen1/assets/fonts/themify-icons/themify-icons.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-content">
+            <a class="header-logo" href="">ベトナムの旧正月</a>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li><a href=""></a>飲食</li>
+                <li><a href=""></a>準備</li>
+                <li><a href=""></a>行事</li>
+                <li><a href=""></a>イメージ</li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="slider">
+        <div class="slider-content">
+            <h1>ベトナムにおける<span>旧正月</span></h1>
+            <p>旧正月（旧暦で大晦日から１月３日までの間、<br>ベトナムでは「テト」と呼ばれ
+                ています。）は昔から続く、ベトナムで最も重要な祝祭日となっています。ベト
+                ナムではテトの間に先祖にお礼を伝え、幸せな新年を祈ります。。。。</p>
+            <button class="slider-btn">詳しく</button>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="inshoku">
+        <div class="titlepage">
+            <h2>テトの飲食</h2>
+            <p>ベトナムでは様々な料理を用意してテトを祝います。</p>
+
+        </div>
+        <div class="naiyo row">
+            <div class="naiyo-left rowleft">
+                <h2>バインチュン - バインテッ</h2>
+                <p>テトの料理といえば、Banh ChungやBanh
+                    Tet（いずれもベトナムのちまきです）が欠かせません。これらはもち米と豆や豚肉などをバナナの葉などで包み、10時間から12時間ほど茹でたもので、Banh Chungは四角形、Banh
+                    Tetは丸くて長い形のものです。かなり日持ちするため、日本のおせち料理のように保存食として楽しめます。その他、Dua mon（切り干し大根と人参の漬け物）やCu kieu（らっきょう）などもあります。
+                </p>
+                <button>詳しく</button>
+
+            </div>
+            <div class="naiyo-right rowright">
+                <img src="/purezen1/assets/imgs/post2.jpg" alt="">
+                <div class="img-name">
+                    <p>バインチュン - バインテッ</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="kazari">
+        <div class="naiyo1 row">
+            <div class="naiyo-left1 rowright">
+                <img src="/purezen1/assets/imgs/anh11.jpg" alt="">
+                <div class="img-text">
+                    <p>ベトナム風ジャムとお菓子</p>
+                </div>
+            </div>
+            <div class="naiyo-right1 rowleft">
+                <h2>ベトナム風ジャムとお菓子</h2>
+                <p>ベトナム風ジャムとお菓子：スイカや向日葵の種、ショウガジャム、ココナッツジャム等様々な種類があり、これらのお菓子は供物台に並べられるほか、来客者にも振る舞われます。テトの飲み物：手作りのお酒をはじめとして、ベトナムの伝統的な飲み物が飲まれています。その他、近年ではワインやビール、ソフトドリンクなども人気があります。
+                </p>
+                <button>詳しく</button>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="gyouji">
+        <div class="titlepage">
+            <h2>テトの準備</h2>
+            <p>ベトナムのテトの装飾は最も印象的なもののひとつで、お祭りの雰囲気を大いに盛り上げます。</p>
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9-5bOxdJCDs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="showanh">
+        <div class="titlepage">
+            <h2>テトの行事</h2>
+            <p>ベトナム人が一年の中でもっとも楽しみにしているベトナムの年中行事です。</p>
+            <div class="album">
+                <div class="anh"><img src="/purezen1/assets/imgs/showanh1.jpg" alt=""></div>
+                <div class="anh"><img src="/purezen1/assets/imgs/showanh2.jpg" alt=""></div>
+                <div class="anh"><img src="/purezen1/assets/imgs/showanh3.jpg" alt=""></div>
+                <div class="anh"><img src="/purezen1/assets/imgs/showanh4.jpg" alt=""></div>
+                <div class="anh"><img src="/purezen1/assets/imgs/showanh5.jpg" alt=""></div>
+                <div class="anh"><img src="/purezen1/assets/imgs/showanh6.jpg" alt=""></div>
+
+            </div>
+            <div class="showfull">
+                <span>&times;</span>
+                <img src="/purezen1/assets/imgs/showanh1.jpg" alt="">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.album img').forEach(anh => {
+                anh.onclick = () => {
+                    document.querySelector('.showfull').style.display = 'block';
+                    document.querySelector('.showfull img').src = anh.getAttribute('src');
+                }
+            });
+            document.querySelector('.showfull span').onclick = () => {
+                document.querySelector('.showfull').style.display = 'none';
+            }
+        </script>
+        <div id="blog">
+            <div class="titlepage">
+                <h2>テトのイメージ</h2>
+                <p></p>
+
+            </div>
+            <div class="blog-list">
+                <div class="blog-item">
+                    <div class="post-top">
+                        <img src="/purezen1/assets/imgs/postmoi.jpg" alt="">
+
+                    </div>
+                    <div class="post-text">
+                        <h3>ムット（砂糖漬け）</h3>
+                        <p>テト祭の期間中、さとうづけは歓迎の贈り物として提供される人気の食品です。主にニンジン、ココナッツ、リンゴなどのドライフルーツや、ローストしたスイカの種、砂糖をかけたヒマワリの種などの種を使って作られます。ベトナム人は、テトでお菓子を食べると旧正月に幸運が訪れると考えています。
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="post-top">
+                        <img src="/purezen1/assets/imgs/post5.jpg" alt="">
+
+                    </div>
+                    <div class="post-text">
+                        <h3>ベトナムテトの過ごし方</h3>
+                        <p>日本のお正月の落ち着いた雰囲気とは違い、ベトナムのテトはとても賑やかなのが特徴的です。
+
+                            先祖が家族と一緒にテトを楽しむために、大晦日に出迎える儀式を行います。先祖の供物台に「おせち料理」を供えます。また、3日に先祖を天国に送るために、もう一度同じような「おせち料理」を準備して供えます。
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="post-top">
+                        <img src="/purezen1/assets/imgs/post3.jpg" alt="">
+
+                    </div>
+                    <div class="post-text">
+                        <h3>獅子舞や龍舞の団</h3>
+                        <p>テト期間中は、道端でよく獅子舞や龍舞の団に会うことができます。ベトナムの獅子舞や龍舞は、長きにわたる発展や富を願うためのものです。突然現れては見事な踊りを披露し、人々を楽しませてくれます。4～5人の獅子舞団が小さいヘム（路地）を通って、ドアを開けている家の前で、お年玉をもらうために舞を披露します。その影響で渋滞になっても、もちろん誰も文句は言いません。
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="post-top">
+                        <img src="/purezen1/assets/imgs/post4.jpg" alt="">
+
+                    </div>
+                    <div class="post-text">
+                        <h3>年始に寺院に行く</h3>
+                        <p>年始に寺院に行くことは、来るテトと春の機会にすべての市民にとって不可欠な活動です. この習慣は、すべてのベトナム人の生活の中で文化的および精神的な美しさになっています。
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div id="info">
+            <div class="info-list">
+                <div class="info-item">
+                    <div class="info-img">
+                        <img src="/purezen1/assets/imgs/MicrosoftTeams-image (6).png" alt="">
+                    </div>
+                    <h2>Duc Loc</h2>
+                    <p>CCC's Student</p>
+                    <div class="info-social">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-github"></i></a>
+                    </div>
+                    <button>Contact me</button>
+                </div>
+                <div class="info-item">
+                    <div class="info-img">
+                        <img src="/purezen1/assets/imgs/hinhphong.png" alt="">
+                    </div>
+                    <h2>Hoang Phong</h2>
+                    <p>CCC's Student</p>
+                    <div class="info-social">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-github"></i></a>
+                    </div>
+                    <button>Contact me</button>
+                </div>
+                <div class="info-item">
+                    <div class="info-img">
+                        <img src="/purezen1/assets/imgs/hinhhung.png" alt="">
+                    </div>
+                    <h2>Nguyen Hung</h2>
+                    <p>CCC's Student</p>
+                    <div class="info-social">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-github"></i></a>
+                    </div>
+                    <button>Contact me</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact">
+            <div class="contact-box">
+                <form>
+                    <input type="text" class="input-field" placeholder="your Name">
+                    <input type="text" class="input-field" placeholder="your Email">
+                    <input type="text" class="input-field" placeholder="your Subject">
+                    <textarea class="input-field" placeholder="Write something.." style="height:200px"></textarea>
+                    <button class="btn">Send</button>
+
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+        <div id="footer">
+            <div class="ft">
+
+                <h2> © Tet Holiday</h2>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
